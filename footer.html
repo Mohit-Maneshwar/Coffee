@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      .footer {
+        background-color: #1d120c;
+        color: white;
+        padding: 50px 20px 20px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        gap: 30px;
+        border-top: 1px solid #5c3b2e;
+        border-bottom: 1px solid #5c3b2e;
+        padding: 40px 0;
+      }
+
+      /* 
+      .logo img {
+        width: 150px;
+        height: auto;
+      } */
+
+      .footer-links ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-links li {
+        margin: 10px 0;
+        cursor: pointer;
+      }
+      .footer-links li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .footer-newsletter {
+        max-width: 400px;
+      }
+
+      .footer-newsletter .newsletter-form {
+        display: flex;
+        border: 1px solid #d18362;
+        margin-top: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+        max-width: 300px;
+      }
+
+      .newsletter-form input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        flex: 1;
+        background-color: transparent;
+        color: white;
+      }
+
+      .newsletter-form button {
+        background-color: transparent;
+        border: none;
+        padding: 0 15px;
+        color: #d18362;
+        cursor: pointer;
+      }
+
+      .footer h3 {
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      .footer p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #aaa;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .newsletter-form {
+          flex-direction: column;
+        }
+
+        .newsletter-form button {
+          width: 100%;
+          padding: 10px;
+          border-top: 1px solid #d18362;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <img style="width: 15rem; margin-top: -3rem;" src="images/logo.png" alt="" />
+        </div>
+        <div class="footer-links">
+          <h3>QUICK LINK</h3>
+          <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#ContactUs">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>CONTACT</h3>
+          <p>+917880298698</p>
+          <p>mohitmane145@gmail.com</p>
+          <p>
+            Mohit Coffee Service<br />
+            481001 Balaght Moti nagar,<br />
+            Madhya Pradesh, India
+          </p>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>SUBSCRIBE NEWSLETTER</h3>
+          <p>
+            Stay connected with Mohit's Coffee! Get the latest updates on new
+            brews, special offers, and coffee events delivered straight to your
+            inbox. Join our community of coffee lovers today.
+          </p>
+
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter Your Email" />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">CopyRight By @mohitCoffee All Right Reserved 2025</p>
+    </footer>
+  </body>
+</html>

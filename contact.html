@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1f0f07;
+  color: #fff;
+}
+
+.contact-section {
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  background-color: #2d1b12;
+  padding: 40px;
+  border: 1px solid #a15e3c;
+  border-radius: 10px;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.contact-info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 5rem;
+}
+
+.contact-form input {
+  padding: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #a15e3c;
+  color: #fff;
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: transparent;
+  border: 2px solid #a15e3c;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #a15e3c;
+}
+
+.social-icons {
+  position: absolute;
+  right: 20px;
+  top: 43%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-icons i {
+  background-color: #a15e3c;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.social-icons i:hover {
+  background-color: #e2916d;
+  color: #2d1a10;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .social-icons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>CONTACT US</h2>
+        <p><strong>EMAIL:</strong><br>mohitmane145@gmail.com</p>
+        <p><strong>PHONE:</strong><br>Mohit Maneshwar – 7880298698</p>
+        <p><strong>ADDRESS:</strong><br>
+          Contact Aroma Coffee to request new service<br>
+          Mohit Coffee Service<br>
+          481001 Balaght Moti nagar,<br>
+          Madhya Pradesh, India<br>
+        </p>
+      </div>
+      <div class="contact-form">
+
+        <form action="save-contact.php" method="POST">
+        <div class="contact-form">
+
+
+
+        <input type="text" name="first_name" placeholder="NAME" required/>
+        <input type="text" name="last_name" placeholder="LAST NAME" required/>
+        <input type="email" name="email" placeholder="EMAIL" required/>
+        <input type="password" name="password" placeholder="PASSWORD" required/>
+        <button type="submit">SUBMIT NOW</button>
+      </div>
+      </form>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/mohit.maneswar.7?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/mohit__mane__145/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mohit-maneshwar-971546297/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Mohit-Maneshwar" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
